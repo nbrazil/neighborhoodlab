@@ -1,0 +1,26 @@
+name: "UC Davis Neighborhood Research Lab"
+output_dir: "."
+navbar:
+  title: "UC Davis Neighborhood Inequality Research Lab"
+  left:
+    - text: "Welcome"
+      href: index.html
+    - text: "General Policies"
+      href: policies.html
+    - text: "Prospective Students"
+      href: prospective.html
+    - text: "Resources"
+      href: resources.html
+output:
+  html_document:
+    theme: flatly
+    highlight: textmate
+    mathjax: ~
+    toc_depth: 3
+    toc_float:
+      collapsed: yes
+      smooth_scroll: yes
+      number_sections: yes
+    css: styles.css
+    keep_md: true
+    lib_dir: site_libs

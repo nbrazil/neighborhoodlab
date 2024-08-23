@@ -1,0 +1,50 @@
+---
+title: "Neighborhood Inequality Lab Manual"
+subtitle: "Professor Noli Brazil"
+output: 
+  html_document:
+    theme: flatly
+    self_contained: false
+---
+
+<style>
+h1.title {
+  font-weight: bold;
+  font-family: Arial;  
+}
+
+h2.title {
+  font-family: Arial;  
+}
+
+.figure {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+</style>
+
+<style type="text/css">
+#TOC {
+  font-size: 13px;
+  font-family: Arial;
+}
+</style>
+
+\
+
+Welcome to the lab of Dr. Noli Brazil, Associate Professor in the Department of Human Ecology at the University of California, Davis. Our lab is focused on investigating the causes and consequences of neighborhood inequality, focusing on cities and urban areas in the United States. The lab is multidisciplinary, drawing in members from Sociology, Public Health, Geography, and Planning. We use a variety of spatial, computational, and statistical methods in pursuit of our mission. 
+
+This website provides the lab's manual, as well as information on how to join the lab, and other resources. The manual will evolve over time to incorporate additional contributions from Lab members and collaborators.
+
+Feel free to draw from this manual, which drew inspiration from other scientists' [lab](https://stanfordhpds.github.io/lab_manual/) [manuals](https://poldracklab.org/).
+
+For more information on Dr. Brazil's research, check out his [professional website](https://nbrazil.faculty.ucdavis.edu/).
+
+
+***
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
+
+
