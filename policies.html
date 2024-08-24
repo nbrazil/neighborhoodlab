@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>General Policies</title>
+
+<script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">UC Davis Neighborhood Inequality Research Lab</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Welcome</a>
+</li>
+<li>
+  <a href="policies.html">General Policies</a>
+</li>
+<li>
+  <a href="prospective.html">Prospective Students</a>
+</li>
+<li>
+  <a href="resources.html">Resources</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">General Policies</h1>
+<h3 class="subtitle"><font size="4">Professor Noli Brazil</font></h3>
+
+</div>
+
+
+<style>
+h1.title {
+  font-weight: bold;
+  font-family: Arial;  
+}
+
+h2.title {
+  font-family: Arial;  
+}
+
+.figure {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+</style>
+<style type="text/css">
+#TOC {
+  font-size: 13px;
+  font-family: Arial;
+}
+</style>
+<p><br />
+</p>
+<p>This page provides information on the lab’s culture, how to join the
+lab, and the general workflow for starting up and working on project
+tasks.</p>
+<div style="margin-bottom:25px;">
+
+</div>
+<div id="lab-culture" class="section level2">
+<h2><strong>Lab Culture</strong></h2>
+<p><br />
+</p>
+<p>The culture of the Neighborhood Inequality Lab is collaborative,
+inclusive, supportive, and free from discrimination. Our community has
+high standards for rigor, quality, and ethics, and supports each other
+to reach these objectives. Because the concept of a lab culture is
+“squishy”, below are distinguishing features of our lab’s culture.</p>
+<ul>
+<li>We have mutual respect for all lab members. This is demonstrated by
+accomplishing tasks by the agreed upon deadlines, starting/ending
+meetings at the scheduled time, and being prepared to discuss and
+engage, which includes drafting agendas if moderating a discussion. This
+is also demonstrated by practicing active listening, and not dominating
+conversations.</li>
+<li>Mutual respect is also demonstrated by providing respectful, honest
+input to all team members, and being open to receiving input from others
+regardless of level/position.</li>
+<li>Mutual respect also means being understanding of others. We are
+coming from different life stages and backgrounds, and are dealing with
+different life stressors. We are compassionate to lab members, and treat
+each other with grace and empathy.</li>
+<li>We also are compassionate to ourselves. We strive for quality and
+rigor, but also balance that with self-compassion when times get
+tough.</li>
+<li>Part of being compassionate to yourself and to others is to ask for
+help, and to offer help when you can. This includes asking//providing
+help for all aspects of the research process, including data analysis
+and writing, and career advice. Be present during meetings and
+gatherings, respond to inquiries when someone posts a question or
+expresses a need, and check in with each other, especially when you know
+someone may be going through a stressful experience.</li>
+<li>The lab is highly multidisciplinary. This is intentional because
+Dr. Brazil’s academic and career background is multidisciplinary, and he
+believes the types of issues and problems the lab addresses require a
+multidisciplinary approach. Part of understanding others is to not only
+respect others’ disciplinary orientations, but use this to our advantage
+in terms of broadening our development as social science scholars and
+practitioners.</li>
+<li>We do not promote a culture of overwork. Professor Brazil does not
+expect you to be working in the evenings or on weekends and asks that
+you to respect Lab members’ evening and weekend time as well. This
+includes not expecting members to review your work product, or otherwise
+be available for typical work tasks outside business hours.</li>
+<li>Have fun. Make jokes. Laugh. Yes, always strive to be professional
+with one another, but also make room to connect with other lab members,
+being respectful of their boundaries.</li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="joining" class="section level2">
+<h2><strong>Joining</strong></h2>
+<p><br />
+</p>
+<p>There are multiple ways you can join the group.</p>
+<ul>
+<li>Graduate student
+<ul>
+<li>Professor Brazil hires you as a Graduate Student Researcher.</li>
+<li>Professor Brazil is your major advisor or co-advisor.</li>
+<li>Professor Brazil is on your dissertation/thesis committee, and your
+research interests align with the types of projects supported by the
+lab.</li>
+</ul></li>
+<li>Undergraduate student
+<ul>
+<li>Professor Brazil hires you as a Research Assistant.</li>
+<li>You work on one of the lab’s projects voluntarily (least preferred),
+enrolled for credit, or to fulfill your internship requirements.</li>
+<li>Professor Brazil is your senior thesis advisor, and the project is
+aligned with the types of projects supported by the lab.</li>
+</ul></li>
+</ul>
+<p>For more details on how to join, see guidelines and advice summarized
+<a href="">here</a>. Note that because of limited space, limited
+resources or lack of fit, the lab may not be able to bring you in as a
+member.</p>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="general-workflow" class="section level2">
+<h2><strong>General Workflow</strong></h2>
+<p><br />
+</p>
+<p>Once it is settled that you are joining the lab, below is an outline
+of the general workflow for setting yourself up in the lab. Fuller
+details for many of these steps are provided in the rest of this
+guide.</p>
+<ol style="list-style-type: decimal">
+<li>Decide on which project to work on (if not recruited by Professor
+Brazil to work on a specific project). This will involve taking one or
+more of the following actions: talking to Prof. Brazil and other lab
+members, reading project material, and attending project meetings.</li>
+<li>For undergraduates, decide whether to be involved in the project as
+a paid Research Assistant, enrolled for credit, to fulfill internship
+requirements, or to fulfill an Honors thesis or some other research
+program (e.g., McNair).</li>
+<li>Meet with Professor Brazil to set expectations and goals, ask
+questions, and iron out logistics. He will also likely recommend reading
+some material to get yourself further acquainted with the project.</li>
+<li>Get access to and acquaint yourself with the Google shared drive
+project folder.</li>
+<li>Download Slack, and join the lab’s Slack group. Introduce yourself
+to everyone in the general channel.</li>
+<li>If you would like access to the lab office space, indicate so during
+your initial meeting with Professor Brazil. You will need to fill out a
+form, and get the key from the department’s office administrator.</li>
+<li>You will get a calendar invite for the regularly scheduled meetings
+for the quarter. Accept the invite to acknowledge your receipt.</li>
+<li>As a paid GSR or RA, you will be required to go through various
+online, self-paced webinars. These will cover various subjects,
+including cyber security and research ethics. Paid RAs are expected to
+log their hours in a timesheet they submit every two weeks.</li>
+<li>Start the project! See the Project Workflow section below.</li>
+</ol>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="lab-space" class="section level2">
+<h2><strong>Lab Space</strong></h2>
+<p><br />
+</p>
+<p>The Neighborhood Inequality Lab has it’s own office space located in
+Hart Hall. The space has two desktop computers, a printer, two desks,
+chairs, bookshelves, white board, coffee and tea maker, and snacks. If
+you would like to access the lab space, indicate so to Professor Brazil,
+and he will set you up with the office administrator. You will have
+access to the lab during business hours, but note that you will likely
+be sharing the lab space with other members, so please coordinate with
+them if the space becomes too congested. Also note that the key is for
+the office space. There is a separate key for the building doors, which
+close after 6 pm. If you would like to use the lab after business hours,
+you can stay in the lab, but you can’t leave the building and come back
+in. There is also a break room located on the first floor that you have
+access to.</p>
+<p>It is your responsibility to use the space appropriately, being
+respectful to other lab members who use the space, as well as those
+occupying offices on the same floor. Please keep the office clean, and
+avoid being loud. If there is any issues with the lab, which includes
+identifying something that the lab space needs, please let Professor
+Brazil know.</p>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="communication" class="section level2">
+<h2><strong>Communication</strong></h2>
+<p><br />
+</p>
+<p>If you are part of a lab research project, you will work closely with
+Professor Brazil. For some projects, you may work with a much larger
+team, with members ranging across undergraduate to masters to PhD level.
+As such, efficient and clear communication between members is vital to
+ensure success and engagement.</p>
+<div style="margin-bottom:25px;">
+
+</div>
+<div id="slack" class="section level3">
+<h3><strong>Slack</strong></h3>
+<p><br />
+</p>
+<p>When you join the lab, you will be expected to join the neighborhood
+lab Slack platform. We use Slack because it’s free, has many easy to use
+messaging features, and all the cool kids are using it. Access Slack
+either through your cell phone, desktop or online internet browser. If
+you don’t already have slack, download it <a
+href="https://slack.com/">here</a>, and you will get an invite from
+Professor Brazil.</p>
+<p>Here’s what you will find and do on Slack:</p>
+<ul>
+<li>Post and read about your project. These include
+<ul>
+<li>A summary of meetings</li>
+<li>A summary of next steps</li>
+<li>Quick updates</li>
+<li>Project related questions that are relevant to all team members</li>
+<li>Scheduling meetings</li>
+</ul></li>
+<li>Read about and contribute to what lab members are doing in other lab
+projects</li>
+<li>Post, read and contribute to questions open to every lab member
+about
+<ul>
+<li>code, data wrangling, data analysis, writing or anything related to
+the the research process</li>
+<li>classes, graduate programs, and other career-related topics</li>
+</ul></li>
+<li>Post and read about announcements for jobs, grants and fellowships,
+seminars, conferences</li>
+<li>You can also direct message (DM) members to discuss private
+issues</li>
+</ul>
+<p>Slack is organized by channel. Each channel is specific to the lab
+project. There is also a channel for code and data analysis related
+posts (e.g., how can I do this in R? Which spatial model should I run?),
+announcements (E.g., job postings, when our next end of the quarter
+celebrations are), and general posts. You can allow for notifications if
+someone posts, or DMs you. Please make an effort to respond to messages
+that message you as quickly as possible.</p>
+<p>Of course, <em>using</em> Slack is voluntary. And if you find
+yourself writing a really long post, perhaps it is better to send an
+email, or wait to ask your question during a meeting. Professor Brazil
+will communicate through both email and Slack.</p>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="meetings" class="section level3">
+<h3><strong>Meetings</strong></h3>
+<p><br />
+</p>
+<p>You are expected to meet with team members as a group on a regular
+basis. Depending on how many team members, and your specific
+responsibilities, you may also need to separately meet with some
+members. Usually, full team meetings are held every week, especially at
+the beginning of the project, but this may change depending on the
+broader project tasks. For example, we will likely meet every week
+during data wrangling and data analysis, but less regularly during the
+writing stage, and potentially not at all for awhile when a paper is
+submitted for journal peer review. Regularly scheduled are usually set
+at the beginning of each quarter, with the understanding that days/times
+may change.</p>
+<p>Meetings typically involve going through updates from each members,
+addressing questions and concerns, and establishing next steps. There’s
+also always time set aside at the beginning of each meeting for general
+updates, questions, and the sharing of
+stories/haikus/sonnets/op-eds.</p>
+<p>Professor Brazil prefers to have meetings in person at his office as
+the default, with the option to meet on Zoom given changes in schedules
+and other unexpected occurrences, such as travel or a minor illness like
+a modest cold (if major, you should not meet at all). However, several
+students do not live locally, or have other life circumstances that make
+it difficult to meet regularly in person, so we hold Zoom-only meetings
+for some projects.</p>
+<p>If you have a question that is preventing you from moving forward
+with your task, do not save it for the team meeting, but reach out to
+the team, or Professor Brazil directly. He will either address it via
+email/slack, or ask to meet with you if the issue is difficult to
+address through email/slack.</p>
+<div style="margin-bottom:25px;">
+
+</div>
+<div id="advising-on-your-work" class="section level4">
+<h4><strong>Advising on your work</strong></h4>
+<p><br />
+</p>
+<p>If you are a student meeting with Professor Brazil to ask questions
+about your dissertation/thesis or a research project separate from those
+conducted in this lab, please adhere to following guidelines:</p>
+<ul>
+<li>Send an email providing context for your project. Some questions can
+be addressed by email instead of an in person meeting.</li>
+<li>If a meeting is needed, give Professor Brazil enough time
+flexibility to schedule one (e.g., do not ask just to meet that
+afternoon or the next day, with no other options), unless it is urgent
+(e.g., I need to send a draft of my thesis to the committee, but I need
+your feedback).</li>
+<li>Send relevant material well in advance of the meeting, preferably no
+less than 5 days before the meeting. This may be the draft of your
+dissertation/thesis, or a few paragraphs providing context to your
+questions.
+<ul>
+<li>If you send material close to the meeting date, do not expect
+Professor Brazil to thoroughly read the material.</li>
+</ul></li>
+<li>Send a written agenda for the meeting through email before the
+meeting, even if it is a few hours in advance.</li>
+<li>The reasons why we want you to provide the materials outlined above
+is so that we can be efficient with our time during the meeting, which
+includes Professor Brazil providing you the best possible and informed
+advice.</li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+</div>
+</div>
+<div id="project-workflow" class="section level2">
+<h2><strong>Project Workflow</strong></h2>
+<p><br />
+</p>
+<p>Lab projects are primarily quantitative. This means that you will
+likely be involved in tasks throughout the data analysis process. You
+will also likely be involved in non data analysis tasks, such as reading
+papers, literature reviews, writing up summaries, contributing to
+manuscripts intended to be published in peer-review academic journals,
+which includes writing but also formatting and adding references, and
+helping present results through PowerPoint presentations, StoryMaps, web
+maps, etc.</p>
+<p>The types of specific tasks and quantitative methods you will employ
+will depend on the project. But below are project workflow components
+that are generally common to all projects.</p>
+<div style="margin-bottom:25px;">
+
+</div>
+<div id="folder-management" class="section level3">
+<h3><strong>Folder Management</strong></h3>
+<p><br />
+</p>
+<p>We use Google Drive to store all project related documents, including
+data, code and analysis output. As a UC Davis student, you have access
+to a lot of memory space on Google drive. You can access it through your
+web browser. But we will ask you to download Google Drive for your
+desktop (see <a href="https://www.google.com/drive/download/">here</a>).
+This will allow you to access Drive folders through your computer’s
+management system. This will also allow you to use directly link R to
+shared folder data by setting your working directory directly to the
+shared drive.</p>
+<p>Although each project is unique, you will find the following folders
+associated with the project:</p>
+<ul>
+<li>References: Papers and reports conducted by other researchers on
+subjects informing/relevant to the project</li>
+<li>Data: Raw and cleaned data files</li>
+<li>Code: R scripts</li>
+<li>Results: Tables, maps, graphs, and modelling results.</li>
+<li>Writing: Documents summarizing project findings, including
+manuscripts being prepared for submission to a peer-reviewed
+journal.</li>
+<li>Presentations: Documents related to presentations of our project
+(e.g., at conferences)</li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="codedata" class="section level3">
+<h3><strong>Code/Data</strong></h3>
+<p><br />
+</p>
+<p>We use the statistical program R for all data wrangling and analysis
+tasks. A few best practices with data and code management:</p>
+<ul>
+<li>When you download raw data, save it to the appropriate folder, and
+always wrangle it through R scripts. Never overwrite the original file.
+Once it is cleaned, save it as a new file</li>
+<li>Rather than dumping all the files in one single Data folder, create
+sub-folders within the data folder organized by type. For example, one
+folder could be demographics, another folder is for another distinct
+type of data (e.g., crime).</li>
+<li>We use R Scripts for data wrangling. We may also use them for the
+exploratory and modelling stages of the project. We use R Markdowns when
+we need to present results, such as a set of graphs and descriptive
+statistics in the exploratory data analysis stage.</li>
+<li>Always start your R Code with a a file header that provides a brief
+summary of what it is doing. Indicate yourself as the author, and put
+the date you first created, and another date for when you last edited.
+And always provide comments to each line of your code. An example of a
+file header is shown below</li>
+</ul>
+<pre class="r"><code>##########################################################
+##This R Script generates demographic data for 18 U.S.
+#cities at the block group level. 
+#
+#
+#Created by: Brittany Vang
+#Month/Year created: February 2023
+#Last edited by Noli Brazil:  June 2023
+#Month/Year last edited: February 2023
+##########################################################</code></pre>
+<ul>
+<li>Other team members will likely use your code, including members that
+join the team after you’ve left, so it is important to comment. If you
+go into someone else’s code to edit/change something, add the edit date,
+and indicate what changes you made (put your initials).</li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="remote-high-performance-computing" class="section level3">
+<h3><strong>Remote High Performance Computing</strong></h3>
+<p><br />
+</p>
+<p>Some tasks based on the size of the data and the memory intensity of
+the statistical models may require memory space beyond what is offered
+in your personal computer or the lab computers. In this case, you can
+access UC Davis <a
+href="https://datalab.ucdavis.edu/remote-high-performance-computing/">High
+Performance Computing (HPC)</a>. This will allow you to store data and
+run models through a remote cluster, which is as a group of
+interconnected computers that work together to perform computationally
+intensive tasks. The cluster you will access depends on which college
+you are affiliated with. Because Professor Brazil is affiliated with the
+College of Agricultural and Environmental Sciences (CAES), he access the
+<a href="https://hpc.ucdavis.edu/farm-cluster">FARM cluster</a>.</p>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="presentations" class="section level3">
+<h3><strong>Presentations</strong></h3>
+<p><br />
+</p>
+<p>It is likely that project findings will be presented to an audience
+outside of your project team at some point during the project. This
+includes:</p>
+<ul>
+<li>We will present results to the neighborhood lab group to get
+feedback and reaction.</li>
+<li>We will present results at a professional conference. This is
+usually a PowerPoint presentation, but also can be a <a
+href="https://urc.ucdavis.edu/creating-effective-academic-posters">poster</a>.</li>
+<li>Undergraduates are expected to present at the yearly UC Davis <a
+href="https://urc.ucdavis.edu/conference">undergraduate research
+conference</a>, which involves putting a poster together and presenting
+it at an hour long session.</li>
+<li>If you are a graduate student doing a research rotation or research
+units with Professor Brazil, then you will present results to your
+program’s committee for the former, or to the lab for the latter.</li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="publishing" class="section level3">
+<h3><strong>Publishing</strong></h3>
+<p><br />
+</p>
+<p>It is expected that project findings will be written up for
+publication in a <a
+href="https://www.nlm.nih.gov/oet/ed/stats/03-700.html">peer-reviewed
+academic journal</a>. You will be included as a co-author on the paper
+as long as you substantively contribute to the project. Although this
+will discussed by team members based on the project, guidelines on what
+determines inclusion in authorship can be found <a
+href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html">here</a>.
+In general, authorship is based on the following criteria:</p>
+<ul>
+<li>Substantial contributions to the conception or design of the work;
+or the acquisition, analysis, or interpretation of data for the work;
+AND</li>
+<li>Drafting the work or revising it critically for important
+intellectual content; AND</li>
+<li>Final approval of the version to be published; AND</li>
+<li>Agreement to be accountable for all aspects of the work in ensuring
+that questions related to the accuracy or integrity of any part of the
+work are appropriately investigated and resolved.</li>
+</ul>
+<p>We will discuss authorship early in the research process and have
+continuing conversations regarding team member roles.</p>
+<p>When we select journals for publication, we will prioritize
+publishing in journals that offer an Open Access option. However, we
+realize that sometimes the most appropriate journal for a particular
+paper will be one that does not offer this option. The UC system
+provides a relatively generous option for covering open access fees.
+However, when this funding is not available for open access publication
+fees, Dr. Brazil will cover these fees using unrestricted funds when
+possible.</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+
+</body>
+</html>
