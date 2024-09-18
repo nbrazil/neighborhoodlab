@@ -34,7 +34,7 @@ h2.title {
 
 \
 
-Welcome to the lab of Dr. Noli Brazil, Associate Professor in the Department of Human Ecology at the University of California, Davis. Our lab is focused on investigating the causes and consequences of neighborhood inequality, focusing on cities and urban areas in the United States. The lab is multidisciplinary, drawing in members from Sociology, Public Health, Geography, and Planning. We use a variety of spatial, computational, and statistical methods in pursuit of our mission. 
+Welcome to the lab of Dr. Noli Brazil, Associate Professor in the Department of Human Ecology at the University of California, Davis. Our lab is focused on investigating the causes and consequences of neighborhood inequality, focusing on cities and urban areas in the United States. The lab is multidisciplinary, working with members from a broad range of fields, including Sociology, Public Health, Geography, and Planning. We use a variety of spatial, computational, and statistical methods in pursuit of our mission. 
 
 This website provides the lab's manual, as well as information on how to join the lab, and other resources. The manual will evolve over time to incorporate additional contributions from Lab members and collaborators.
 

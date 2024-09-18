@@ -52,7 +52,7 @@ The culture of the Neighborhood Inequality Lab is collaborative, inclusive, supp
 * We also are compassionate to ourselves. We strive for quality and rigor, but also balance that with self-compassion when times get tough.
 * Part of being compassionate to yourself and to others is to ask for help, and to offer help when you can. This includes asking//providing help for all aspects of the research process, including data analysis and writing, and career advice. Be present during meetings and gatherings, respond to inquiries when someone posts a question or expresses a need, and check in with each other, especially when you know someone may be going through a stressful experience.
 * The lab is highly multidisciplinary. This is intentional because Dr. Brazil's academic and career background is multidisciplinary, and he believes the types of issues and problems the lab addresses require a multidisciplinary approach. Part of understanding others is to not only respect  others' disciplinary orientations, but use this to our advantage in terms of broadening our development as social science scholars and practitioners. 
-* We do not promote a culture of overwork. Professor Brazil does not expect you to be working in the evenings or on weekends and asks that you to respect Lab members’ evening and weekend time as well. This includes not expecting members to review your work product, or otherwise be available for typical work tasks outside business hours.
+* We do not promote a culture of overwork. Professor Brazil does not expect members to be working in the evenings or on weekends, and asks that members respect all lab members’ evening and weekend time as well. This includes not expecting members to review your work product, or otherwise be available for typical work tasks outside business hours.
 * Have fun. Make jokes. Laugh. Yes, always strive to be professional with one another, but also make room to connect with other lab members, being respectful of their boundaries.
 
 <div style="margin-bottom:25px;">
@@ -69,7 +69,7 @@ There are multiple ways you can join the group.
 
 * Undergraduate student
   + Professor Brazil hires you as a Research Assistant.
-  + You work on one of the lab's projects voluntarily (least preferred), enrolled for credit, or to fulfill your internship requirements.
+  + You work on one of the lab's projects voluntarily, enrolled for credit, or to fulfill your internship requirements.
   + Professor Brazil is your senior thesis advisor, and the project is aligned with the types of projects supported by the lab.
   
   
@@ -78,7 +78,7 @@ For more details on how to join, see guidelines and advice summarized [here](). 
 
 <div style="margin-bottom:25px;">
 </div>
-## **General Workflow**
+### **General Workflow**
 \
 
 Once it is settled that you are joining the lab, below is an outline of the general workflow for setting yourself up in the lab. Fuller details for many of these steps are provided in the rest of this guide.
@@ -114,7 +114,7 @@ If you are part of a lab research project, you will work closely with Professor 
 ### **Slack**
 \
 
-When you join the lab, you will be expected to join the neighborhood lab Slack platform. We use Slack because it's free, has many easy to use messaging features, and all the cool kids are using it. Access Slack either through your cell phone, desktop or online internet browser.  If you don't already have slack, download it [here](https://slack.com/), and you will get an invite from Professor Brazil. 
+When you join the lab, you will be expected to join the neighborhood inequality lab Slack platform. We use Slack because it's free, has many easy to use messaging features, and all the cool kids are using it. Access Slack either through your cell phone, desktop or online internet browser.  If you don't already have slack, download it [here](https://slack.com/), and you will get an invite from Professor Brazil. 
 
 Here's what you will find and do on Slack:
 
@@ -233,7 +233,7 @@ Some tasks based on the size of the data and the memory intensity of the statist
 
 It is likely that project findings will be presented to an audience outside of your project team at some point during the project. This includes:
 
-* We will present results to the neighborhood lab group to get feedback and reaction.
+* We will present results to the lab group to get feedback and reaction.
 * We will present results at a professional conference. This is usually a PowerPoint presentation, but also can be a [poster](https://urc.ucdavis.edu/creating-effective-academic-posters). 
 * Undergraduates are expected to present at the yearly UC Davis [undergraduate research conference](https://urc.ucdavis.edu/conference), which involves putting a poster together and presenting it at an hour long session.
 * If you are a graduate student doing a research rotation or research units with Professor Brazil, then you will present results to your program's committee for the former, or to the lab for the latter.
