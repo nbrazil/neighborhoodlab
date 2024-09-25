@@ -1,6 +1,6 @@
 ---
 title: "Neighborhood Inequality Lab Manual"
-subtitle: "Professor Noli Brazil"
+subtitle: "Associate Professor Noli Brazil"
 author: "University of California, Davis"
 output: 
   html_document:
