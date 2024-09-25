@@ -131,7 +131,7 @@ Here's what you will find and do on Slack:
 * Post and read about announcements for jobs, grants and fellowships, seminars, conferences
 * You can also direct message (DM) members to discuss private issues
 
-Slack is organized by channel. Each channel is specific to the lab project. There is also a channel for  code and data analysis related posts (e.g., how can I do this in R? Which spatial model should I run?), announcements (E.g., job postings, when our next end of the quarter celebrations are), and general posts. You can allow for notifications if someone posts, or DMs you. Please make an effort to respond to messages that message you as quickly as possible.
+Slack is organized by channel. Each channel is specific to the lab project. There is also a channel for  code and data analysis related posts (e.g., how can I do this in R? Which spatial model should I run?), announcements (E.g., job postings, when our next end of the quarter celebrations are), and general posts. You can allow for notifications if someone posts, or DMs you. Please make an effort to respond to messages as quickly as possible.
 
 Of course, *using* Slack is voluntary. And if you find yourself writing a really long post, perhaps it is better to send an email, or wait to ask your question during a meeting.  Professor Brazil will communicate through both email and Slack.
 
@@ -140,27 +140,14 @@ Of course, *using* Slack is voluntary. And if you find yourself writing a really
 ### **Meetings**
 \
 
-You are expected to meet with team members as a group on a regular basis. Depending on how many team members, and your specific responsibilities, you may also need to separately meet with some members. Usually, full team meetings are held every week, especially at the beginning of the project, but this may change depending on the broader project tasks. For example, we will likely meet every week during data wrangling and data analysis, but less regularly during the writing stage, and potentially not at all for awhile when a paper is submitted for journal peer review. Regularly scheduled are usually set at the beginning of each quarter, with the understanding that days/times may change.
+You are expected to meet with team members as a group on a regular basis. Depending on how many team members, and your specific responsibilities, you may also need to separately meet with some members. Usually, full team meetings are held every week, especially at the beginning of the project, but this may change depending on the broader project tasks. For example, we will likely meet every week during data wrangling and data analysis, but less regularly during the writing stage, and potentially not at all for awhile when a paper is submitted for journal peer review.  Meeting days and times are usually set at the beginning of each quarter, with the understanding that days/times may change due to unforeseen scheduling conflicts.
 
-Meetings typically involve going through updates from each members,  addressing questions and concerns, and establishing next steps. There's also always time set aside at the beginning of each meeting for general updates, questions, and the sharing of stories/haikus/sonnets/op-eds.
+Meetings typically involve going through updates from each members,  addressing questions and concerns, and establishing next steps. Time is also set aside at the beginning of each meeting for general updates, questions, and the sharing of stories/haikus/sonnets/op-eds.
 
 Professor Brazil prefers to have meetings in person at his office as the default, with the option to meet on Zoom given changes in schedules and other unexpected occurrences, such as travel or a minor illness like a modest cold (if major, you should not meet at all). However, several students do not live locally, or have other life circumstances that make it difficult to meet regularly in person, so we hold Zoom-only meetings for some projects.
 
 If you have a question that is preventing you from moving forward with your task, do not save it for the team meeting, but reach out to the team, or Professor Brazil directly. He will either address it via email/slack, or ask to meet with you if the issue is difficult to address through email/slack. 
 
-<div style="margin-bottom:25px;">
-</div>
-#### **Advising on your work**
-\
-
-If you are a student meeting with Professor Brazil to ask questions about your dissertation/thesis or a research project separate from those conducted in this lab, please adhere to following guidelines:
-
-* Send an email providing context for your project. Some questions can be addressed by email instead of an in person meeting. 
-* If a meeting is needed, give Professor Brazil enough time flexibility to schedule one (e.g., do not ask just to meet that afternoon or the next day, with no other options), unless it is urgent (e.g., I need to send a draft of my thesis to the committee, but I need your feedback). 
-* Send relevant material well in advance of the meeting, preferably no less than 5 days before the meeting. This may be the draft of your dissertation/thesis, or a few paragraphs providing context to your questions.
-  + If you send material close to the meeting date, do not expect Professor Brazil to thoroughly read the material. 
-* Send a written agenda for the meeting through email before the meeting, even if it is a few hours in advance. 
-* The reasons why we want you to provide the materials outlined above is so that we can be efficient with our time during the meeting, which includes Professor Brazil providing you the best possible and informed advice.
 
 
 <div style="margin-bottom:25px;">
@@ -177,7 +164,7 @@ The types of specific tasks and quantitative methods you will employ will depend
 ### **Folder Management**
 \
 
-We use Google Drive to store all project related documents, including data, code and analysis output. As a UC Davis student, you have access to a lot of memory space on Google drive. You can access it through your web browser. But we will ask you to download Google Drive for your desktop (see [here](https://www.google.com/drive/download/)). This will allow you to access Drive folders through your computer's management system. This will also allow you to use directly link R to shared folder data by setting your working directory directly to the shared drive.
+We use Google Drive to store all project related documents, including data, code and analysis output. As a UC Davis student, you have access to a lot of memory space on Google Drive. You can access it through your web browser. But we will ask you to download Google Drive for your desktop (see [here](https://www.google.com/drive/download/)). This will allow you to access Drive folders through your computer's management system. This will also allow you to use directly link R to shared folder data by setting your working directory directly to the shared drive.
 
 Although each project is unique, you will find the following folders associated with the project:
 
@@ -195,12 +182,14 @@ Although each project is unique, you will find the following folders associated 
 ### **Code/Data**
 \
 
-We use the statistical program R for all data wrangling and analysis tasks. A few best practices with data and code management:
+We use the statistical program R for all data wrangling and analysis tasks. If you do not have experience with R, you may be expected to learn it on your own. Although R is strongly preferred, other statistical software packages such as Stata may be an option. Please discuss with Prof. Brazil about options outside of R before starting a project. 
+
+A few best practices with data and R code management:
 
 * When you download raw data, save it to the appropriate folder, and always wrangle it through R scripts. Never overwrite the original file. Once it is cleaned, save it as a new file
 * Rather than dumping all the files in one single Data folder, create sub-folders within the data folder organized by type. For example, one folder could be demographics, another folder is for another distinct type of data (e.g., crime).
-* We use R Scripts for data wrangling. We may also use them for the exploratory and modelling stages of the project. We use R Markdowns when we need to present results, such as a set of graphs and descriptive statistics in the exploratory data analysis stage.
-* Always start your R Code with a a file header that provides a brief summary of what it is doing. Indicate yourself as the author, and put the date you first created, and another date for when you last edited. And always provide comments to each line of your code. An example of a file header is shown below
+* We generally use R Markdowns for all data wrangling and analysis tasks. 
+* Always start your R Code with a a file header that provides a brief summary of what it is doing. Indicate yourself as the author, and put the date you first created, and another date for when you last edited. And always provide comments to each line of your code. An example of a file header for an R Script is shown below:
 
 ```{r}
 ##########################################################
@@ -216,13 +205,15 @@ We use the statistical program R for all data wrangling and analysis tasks. A fe
 ```
 
 * Other team members will likely use your code, including members that join the team after you've left, so it is important to comment. If you go into someone else's code to edit/change something, add the edit date, and indicate what changes you made (put your initials).
+* Indicate the version of R and RStudio you used to last run the script. This is needed because some packages may conflict with older/newer versions of R/RStudio, and in some cases, data analysis results may change when using one version of R vs. another.
+
 
 <div style="margin-bottom:25px;">
 </div>
 ### **Remote High Performance Computing**
 \
 
-Some tasks based on the size of the data and the memory intensity of the statistical models may require memory space beyond what is offered in your personal computer or the lab computers. In this case, you can access UC Davis [High Performance Computing (HPC)](https://datalab.ucdavis.edu/remote-high-performance-computing/). This will allow you to store data and run models through a remote cluster, which is as a group of interconnected computers that work together to perform computationally intensive tasks. The cluster you will access depends on which college you are affiliated with. Because Professor Brazil is affiliated with the College of Agricultural and Environmental Sciences (CAES), he access the [FARM cluster](https://hpc.ucdavis.edu/farm-cluster). 
+Some tasks based on the size of the data and the memory intensity of the statistical models may require memory space beyond what is offered in your personal computer or the lab computers. In this case, you can access UC Davis [High Performance Computing (HPC)](https://datalab.ucdavis.edu/remote-high-performance-computing/). This will allow you to store data and run models through a remote cluster, which is as a group of interconnected computers that work together to perform computationally intensive tasks. The cluster you will access depends on which college you are affiliated with. Because Professor Brazil is affiliated with the College of Agricultural and Environmental Sciences (CAES), he access the [FARM cluster](https://hpc.ucdavis.edu/farm-cluster). [Here](https://www.michaelc-m.com/farm-cluster-intro/#intro) is a good tutorial for accessing and using the FARM cluster.
 
 
 
@@ -233,8 +224,8 @@ Some tasks based on the size of the data and the memory intensity of the statist
 
 It is likely that project findings will be presented to an audience outside of your project team at some point during the project. This includes:
 
-* We will present results to the lab group to get feedback and reaction.
-* We will present results at a professional conference. This is usually a PowerPoint presentation, but also can be a [poster](https://urc.ucdavis.edu/creating-effective-academic-posters). 
+* Presenting results to the full lab group to get feedback and reaction.
+* Presenting results at a professional conference. This is usually a PowerPoint presentation, but also can be a [poster](https://urc.ucdavis.edu/creating-effective-academic-posters). Lab members have presented at the [Population Association of America's](https://www.populationassociation.org/events-publications/future-past-meetings) annual conference, the [American Sociological Association's](https://www.asanet.org/annual-meeting/) conference, and [Association for Public Policy Analysis and Management](https://www.appam.org/) conference.
 * Undergraduates are expected to present at the yearly UC Davis [undergraduate research conference](https://urc.ucdavis.edu/conference), which involves putting a poster together and presenting it at an hour long session.
 * If you are a graduate student doing a research rotation or research units with Professor Brazil, then you will present results to your program's committee for the former, or to the lab for the latter.
 

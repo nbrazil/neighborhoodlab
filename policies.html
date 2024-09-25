@@ -584,7 +584,7 @@ posts (e.g., how can I do this in R? Which spatial model should I run?),
 announcements (E.g., job postings, when our next end of the quarter
 celebrations are), and general posts. You can allow for notifications if
 someone posts, or DMs you. Please make an effort to respond to messages
-that message you as quickly as possible.</p>
+as quickly as possible.</p>
 <p>Of course, <em>using</em> Slack is voluntary. And if you find
 yourself writing a really long post, perhaps it is better to send an
 email, or wait to ask your question during a meeting. Professor Brazil
@@ -605,14 +605,13 @@ the beginning of the project, but this may change depending on the
 broader project tasks. For example, we will likely meet every week
 during data wrangling and data analysis, but less regularly during the
 writing stage, and potentially not at all for awhile when a paper is
-submitted for journal peer review. Regularly scheduled are usually set
-at the beginning of each quarter, with the understanding that days/times
-may change.</p>
+submitted for journal peer review. Meeting days and times are usually
+set at the beginning of each quarter, with the understanding that
+days/times may change due to unforeseen scheduling conflicts.</p>
 <p>Meetings typically involve going through updates from each members,
-addressing questions and concerns, and establishing next steps. There’s
-also always time set aside at the beginning of each meeting for general
-updates, questions, and the sharing of
-stories/haikus/sonnets/op-eds.</p>
+addressing questions and concerns, and establishing next steps. Time is
+also set aside at the beginning of each meeting for general updates,
+questions, and the sharing of stories/haikus/sonnets/op-eds.</p>
 <p>Professor Brazil prefers to have meetings in person at his office as
 the default, with the option to meet on Zoom given changes in schedules
 and other unexpected occurrences, such as travel or a minor illness like
@@ -627,40 +626,6 @@ email/slack, or ask to meet with you if the issue is difficult to
 address through email/slack.</p>
 <div style="margin-bottom:25px;">
 
-</div>
-<div id="advising-on-your-work" class="section level4">
-<h4><strong>Advising on your work</strong></h4>
-<p><br />
-</p>
-<p>If you are a student meeting with Professor Brazil to ask questions
-about your dissertation/thesis or a research project separate from those
-conducted in this lab, please adhere to following guidelines:</p>
-<ul>
-<li>Send an email providing context for your project. Some questions can
-be addressed by email instead of an in person meeting.</li>
-<li>If a meeting is needed, give Professor Brazil enough time
-flexibility to schedule one (e.g., do not ask just to meet that
-afternoon or the next day, with no other options), unless it is urgent
-(e.g., I need to send a draft of my thesis to the committee, but I need
-your feedback).</li>
-<li>Send relevant material well in advance of the meeting, preferably no
-less than 5 days before the meeting. This may be the draft of your
-dissertation/thesis, or a few paragraphs providing context to your
-questions.
-<ul>
-<li>If you send material close to the meeting date, do not expect
-Professor Brazil to thoroughly read the material.</li>
-</ul></li>
-<li>Send a written agenda for the meeting through email before the
-meeting, even if it is a few hours in advance.</li>
-<li>The reasons why we want you to provide the materials outlined above
-is so that we can be efficient with our time during the meeting, which
-includes Professor Brazil providing you the best possible and informed
-advice.</li>
-</ul>
-<div style="margin-bottom:25px;">
-
-</div>
 </div>
 </div>
 </div>
@@ -688,7 +653,7 @@ that are generally common to all projects.</p>
 </p>
 <p>We use Google Drive to store all project related documents, including
 data, code and analysis output. As a UC Davis student, you have access
-to a lot of memory space on Google drive. You can access it through your
+to a lot of memory space on Google Drive. You can access it through your
 web browser. But we will ask you to download Google Drive for your
 desktop (see <a href="https://www.google.com/drive/download/">here</a>).
 This will allow you to access Drive folders through your computer’s
@@ -718,7 +683,12 @@ journal.</li>
 <p><br />
 </p>
 <p>We use the statistical program R for all data wrangling and analysis
-tasks. A few best practices with data and code management:</p>
+tasks. If you do not have experience with R, you may be expected to
+learn it on your own. Although R is strongly preferred, other
+statistical software packages such as Stata may be an option. Please
+discuss with Prof. Brazil about options outside of R before starting a
+project.</p>
+<p>A few best practices with data and R code management:</p>
 <ul>
 <li>When you download raw data, save it to the appropriate folder, and
 always wrangle it through R scripts. Never overwrite the original file.
@@ -727,15 +697,13 @@ Once it is cleaned, save it as a new file</li>
 sub-folders within the data folder organized by type. For example, one
 folder could be demographics, another folder is for another distinct
 type of data (e.g., crime).</li>
-<li>We use R Scripts for data wrangling. We may also use them for the
-exploratory and modelling stages of the project. We use R Markdowns when
-we need to present results, such as a set of graphs and descriptive
-statistics in the exploratory data analysis stage.</li>
+<li>We generally use R Markdowns for all data wrangling and analysis
+tasks.</li>
 <li>Always start your R Code with a a file header that provides a brief
 summary of what it is doing. Indicate yourself as the author, and put
 the date you first created, and another date for when you last edited.
 And always provide comments to each line of your code. An example of a
-file header is shown below</li>
+file header for an R Script is shown below:</li>
 </ul>
 <pre class="r"><code>##########################################################
 ##This R Script generates demographic data for 18 U.S.
@@ -752,6 +720,10 @@ file header is shown below</li>
 join the team after you’ve left, so it is important to comment. If you
 go into someone else’s code to edit/change something, add the edit date,
 and indicate what changes you made (put your initials).</li>
+<li>Indicate the version of R and RStudio you used to last run the
+script. This is needed because some packages may conflict with
+older/newer versions of R/RStudio, and in some cases, data analysis
+results may change when using one version of R vs. another.</li>
 </ul>
 <div style="margin-bottom:25px;">
 
@@ -772,7 +744,9 @@ interconnected computers that work together to perform computationally
 intensive tasks. The cluster you will access depends on which college
 you are affiliated with. Because Professor Brazil is affiliated with the
 College of Agricultural and Environmental Sciences (CAES), he access the
-<a href="https://hpc.ucdavis.edu/farm-cluster">FARM cluster</a>.</p>
+<a href="https://hpc.ucdavis.edu/farm-cluster">FARM cluster</a>. <a
+href="https://www.michaelc-m.com/farm-cluster-intro/#intro">Here</a> is
+a good tutorial for accessing and using the FARM cluster.</p>
 <div style="margin-bottom:25px;">
 
 </div>
@@ -785,11 +759,18 @@ College of Agricultural and Environmental Sciences (CAES), he access the
 outside of your project team at some point during the project. This
 includes:</p>
 <ul>
-<li>We will present results to the lab group to get feedback and
+<li>Presenting results to the full lab group to get feedback and
 reaction.</li>
-<li>We will present results at a professional conference. This is
-usually a PowerPoint presentation, but also can be a <a
-href="https://urc.ucdavis.edu/creating-effective-academic-posters">poster</a>.</li>
+<li>Presenting results at a professional conference. This is usually a
+PowerPoint presentation, but also can be a <a
+href="https://urc.ucdavis.edu/creating-effective-academic-posters">poster</a>.
+Lab members have presented at the <a
+href="https://www.populationassociation.org/events-publications/future-past-meetings">Population
+Association of America’s</a> annual conference, the <a
+href="https://www.asanet.org/annual-meeting/">American Sociological
+Association’s</a> conference, and <a
+href="https://www.appam.org/">Association for Public Policy Analysis and
+Management</a> conference.</li>
 <li>Undergraduates are expected to present at the yearly UC Davis <a
 href="https://urc.ucdavis.edu/conference">undergraduate research
 conference</a>, which involves putting a poster together and presenting
