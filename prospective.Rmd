@@ -92,6 +92,8 @@ If you are a student meeting with Professor Brazil to ask questions about your d
 * Send a written agenda for the meeting through email before the meeting, even if it is a few hours in advance. 
 * The reasons why we want you to provide the materials outlined above is so that we can be efficient with our time during the meeting, which includes Professor Brazil providing you the best possible and informed advice.
 
+<div style="margin-bottom:25px;">
+</div>
 ## **Letter of Recommendation**
 \
 
