@@ -1,0 +1,197 @@
+---
+title: "Resources"
+subtitle: <font size="4">Professor Noli Brazil</font>
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    theme: flatly
+    self_contained: false
+---
+
+<style>
+h1.title {
+  font-weight: bold;
+  font-family: Arial;  
+}
+
+h2.title {
+  font-family: Arial;  
+}
+
+.figure {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+</style>
+
+<style type="text/css">
+#TOC {
+  font-size: 13px;
+  font-family: Arial;
+}
+</style>
+
+\
+
+This page provides links to various resources for students related to funding, conferences, career, graduate school, and UC Davis opportunities.
+
+<div style="margin-bottom:25px;">
+</div>
+## **Graduate School**
+\
+
+<div style="margin-bottom:25px;">
+</div>
+### **Applying to Graduate School**
+\
+
+If you’re considering grad school for your future, you should be asking yourself many questions:
+
+* Is grad school the best option for me right now? 
+* What are the benefits and challenges? 
+* What’s the difference between undergrad and grad school? 
+* Should I seek a master’s degree or doctoral degree? 
+* How will I fund my time in grad school?  How does financial aid work in grad school, and what other kinds of financial support are available?
+* Which grad programs should I apply to? 
+* What’s involved in applying to grad school? 
+* Who can help me? What resources are available? 
+* What are some alternatives to grad school?
+    
+These are all important questions to consider, and this can feel overwhelming.  However, many people and resources, such as those listed below, can help you through this process and answer many of your questions. 
+
+* Preparing to apply for graduate school - [start early](https://graduate.universityofcalifornia.edu/preparing/)
+
+* UC Merced's graduate school preparation [guide](https://uroc.ucmerced.edu/training/graduate-prep-guide) 
+
+<div style="margin-bottom:25px;">
+</div>
+#### **Master’s vs Doctoral Programs**
+\
+
+While a typical 4-year undergraduate program refers to pursuing a bachelor’s degree (often a BS or BA degree), a graduate program can refer to pursuing a master’s or doctoral degree.
+
+Master’s Programs (MS or MA)
+
+* Master’s programs usually last about 2 years, but there are shorter and longer programs, with the range usually between 1 and 3 years.
+* Master’s programs usually provide much less financial support. 
+* All master’s programs require coursework, and only some require research that leads to a thesis (a write-up of your research).
+* Requirements for master’s programs are usually less than those for doctoral programs.
+
+Doctoral Programs (PhD)
+
+* Doctoral programs have a wide range of typical lengths, from 4 to 8 years. The length of the program is very specific to the field.
+* Doctoral programs usually provide some financial support.
+* In some doctoral programs (e.g., some engineering programs), you earn a master’s degree before earning a PhD. But in many other programs, the master’s degree is not required before pursuing a PhD.
+* All doctoral programs require research that leads to a dissertation (a write-up of multiple years of research, longer than a master’s thesis).
+* For some doctoral programs, if you are not able to complete all of the requirements, you might be allowed to exit with a master’s degree.
+
+Master of Arts (MA) vs Master of Fine Arts (MFA) Degree Programs
+
+An MA program focuses on deep study and analysis of a subject, perhaps culminating in a thesis (some MA programs involve only coursework). On the other hand, an MFA program focuses on the creation of a substantive work of art (such as a painting or sculpture, a piece of literature, or a musical piece). Many MFA degrees are considered terminal degrees, meaning they’re the highest degree that you can earn in that particular field of art.
+
+<div style="margin-bottom:25px;">
+</div>
+### **The Hidden Curriculum**
+\
+
+A lot of incoming and advanced graduate students often feel like they are navigating things for the first time in their program while their peers have it all figured out. It can seem like everyone knows something you don't or has access to inside information. Jessica Calarco defines the hidden curriculum as "the knowledge and skills that matter for student success but aren’t explicitly taught." Imagine a path starting when you arrive on campus to begin your graduate career. This path twists and winds over various landscapes that lead to your degree. Everyone's path will have a slightly different starting point and the endpoints will cluster together depending on your earned degree. Throughout the landscape, there are treasure chests scattered about with different tools inside. Many chests have tools that are field-specific, meaning that it's something only people who are scholars in that particular field would need. Then there are a few chests with tools that are beneficial to most if not all graduate students at an institution. Part of your graduate journey is navigating the landscape to find these chests and use the tools inside to make it to the end (your degree).
+
+* [UC Davis Graduate Studies Resources](https://grad.ucdavis.edu/program-resources)
+
+* [Jessica Calarco's A Field Guide to Grad School](https://press.princeton.edu/books/paperback/9780691201092/a-field-guide-to-grad-school)
+
+<div style="margin-bottom:25px;">
+</div>
+### **Funding**
+\
+
+* [UC Davis Graduate Funding Resources Guide](https://grad.ucdavis.edu/funding-your-graduate-education)
+
+Dissertation Funding Sources
+
+* [National Science Foundation](https://www.nsf.gov/funding/graduate-students)
+* [Russell Sage Foundation](https://www.russellsage.org/grants/dissertation-research)
+* [Spencer Foundation](https://www.spencer.org/grant_types/dissertation-fellowship)
+* [Ford Foundation](https://www.nationalacademies.org/our-work/ford-foundation-fellowships)
+* [Horowowitz Foundation](https://www.horowitz-foundation.org/)
+* [Washington Center for Equitable Growth](https://equitablegrowth.org/engage/funding-opportunities/)
+* [UC Davis internal grants](https://grad.ucdavis.edu/annual-internal-fellowship-competition-continuing-graduate-students)
+
+
+<div style="margin-bottom:25px;">
+</div>
+### **Conferences**
+\
+
+* [Population Association of America](https://www.populationassociation.org/home)
+* [Association of American Geographers](https://www.aag.org/)
+* [American Sociological Association](https://www.asanet.org/)
+* [International Union for the Scientific Study of Population](https://iussp.org/en/international-population-conference)
+* [Urban Affairs Association](https://urbanaffairsassociation.org/conference/)
+* [UC Davis Undergraduate Research Conference](https://urc.ucdavis.edu/conference)
+
+* [UC Davis travel awards](https://grad.ucdavis.edu/travel-awards)
+
+<div style="margin-bottom:25px;">
+</div>
+### **Applying to the Job Market**
+\
+
+* [Applying on the US Academic Job Market: A Brief Guide](https://nicolesheriko.com/wp-content/uploads/2023/08/us-academic-job-market-brief-guide-web-version.pdf)
+
+Academic Job Listings
+
+* [Population Association of America](https://populationassociation.careerwebsite.com/)
+* [Association of American Geographers](https://jobs.aag.org/jobs/?sort=start)
+* [Association for Public Policy Analysis & Management](https://jobs.aag.org/jobs/?sort=start)
+
+
+<div style="margin-bottom:25px;">
+</div>
+## **UC Davis Resources**
+\
+
+<div style="margin-bottom:25px;">
+</div>
+### **Health & Wellness**
+\
+
+* The UC Davis student [FAQ page](https://ebeler.faculty.ucdavis.edu/resources/faq-student-resources/) is designed to provide information for students on general academic resources, health and wellness, careers/internships, and community resources. The page has updated links to information on campus resources.
+
+
+<div style="margin-bottom:25px;">
+</div>
+### **Data**
+\
+
+* [Data Lab](https://datalab.ucdavis.edu/)
+* [Geospatial listserve](https://lists.ucdavis.edu/sympa/info/geospatial)
+* [Davis R Users Group](https://d-rug.github.io/)
+
+<div style="margin-bottom:25px;">
+</div>
+### **Classes**
+\
+
+* [Data Science](https://datalab.ucdavis.edu/courses/)
+
+Geospatial/GIS/Spatial
+
+* CRD 150 - Quantitative Methods in Community Research
+
+* CRD 230 - Spatial Methods in Community Research
+
+* GEO 200CN - Quantitative Geography
+
+* LDA 150 - Introduction to GIS
+
+* LDA 152 - Ecological Planning and Design
+
+<div style="margin-bottom:25px;">
+</div>
+### **Other**
+\
+

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Resources</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">UC Davis Neighborhood Inequality Research Lab</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Welcome</a>
+</li>
+<li>
+  <a href="policies.html">General Policies</a>
+</li>
+<li>
+  <a href="prospective.html">Prospective Students</a>
+</li>
+<li>
+  <a href="resources.html">Resources</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Resources</h1>
+<h3 class="subtitle"><font size="4">Professor Noli Brazil</font></h3>
+
+</div>
+
+
+<style>
+h1.title {
+  font-weight: bold;
+  font-family: Arial;  
+}
+
+h2.title {
+  font-family: Arial;  
+}
+
+.figure {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+</style>
+<style type="text/css">
+#TOC {
+  font-size: 13px;
+  font-family: Arial;
+}
+</style>
+<p><br />
+</p>
+<p>This page provides links to various resources for students related to
+funding, conferences, career, graduate school, and UC Davis
+opportunities.</p>
+<div style="margin-bottom:25px;">
+
+</div>
+<div id="graduate-school" class="section level2">
+<h2><strong>Graduate School</strong></h2>
+<p><br />
+</p>
+<div style="margin-bottom:25px;">
+
+</div>
+<div id="applying-to-graduate-school" class="section level3">
+<h3><strong>Applying to Graduate School</strong></h3>
+<p><br />
+</p>
+<p>If you’re considering grad school for your future, you should be
+asking yourself many questions:</p>
+<ul>
+<li>Is grad school the best option for me right now?</li>
+<li>What are the benefits and challenges?</li>
+<li>What’s the difference between undergrad and grad school?</li>
+<li>Should I seek a master’s degree or doctoral degree?</li>
+<li>How will I fund my time in grad school? How does financial aid work
+in grad school, and what other kinds of financial support are
+available?</li>
+<li>Which grad programs should I apply to?</li>
+<li>What’s involved in applying to grad school?</li>
+<li>Who can help me? What resources are available?</li>
+<li>What are some alternatives to grad school?</li>
+</ul>
+<p>These are all important questions to consider, and this can feel
+overwhelming. However, many people and resources, such as those listed
+below, can help you through this process and answer many of your
+questions.</p>
+<ul>
+<li><p>Preparing to apply for graduate school - <a
+href="https://graduate.universityofcalifornia.edu/preparing/">start
+early</a></p></li>
+<li><p>UC Merced’s graduate school preparation <a
+href="https://uroc.ucmerced.edu/training/graduate-prep-guide">guide</a></p></li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+<div id="masters-vs-doctoral-programs" class="section level4">
+<h4><strong>Master’s vs Doctoral Programs</strong></h4>
+<p><br />
+</p>
+<p>While a typical 4-year undergraduate program refers to pursuing a
+bachelor’s degree (often a BS or BA degree), a graduate program can
+refer to pursuing a master’s or doctoral degree.</p>
+<p>Master’s Programs (MS or MA)</p>
+<ul>
+<li>Master’s programs usually last about 2 years, but there are shorter
+and longer programs, with the range usually between 1 and 3 years.</li>
+<li>Master’s programs usually provide much less financial support.</li>
+<li>All master’s programs require coursework, and only some require
+research that leads to a thesis (a write-up of your research).</li>
+<li>Requirements for master’s programs are usually less than those for
+doctoral programs.</li>
+</ul>
+<p>Doctoral Programs (PhD)</p>
+<ul>
+<li>Doctoral programs have a wide range of typical lengths, from 4 to 8
+years. The length of the program is very specific to the field.</li>
+<li>Doctoral programs usually provide some financial support.</li>
+<li>In some doctoral programs (e.g., some engineering programs), you
+earn a master’s degree before earning a PhD. But in many other programs,
+the master’s degree is not required before pursuing a PhD.</li>
+<li>All doctoral programs require research that leads to a dissertation
+(a write-up of multiple years of research, longer than a master’s
+thesis).</li>
+<li>For some doctoral programs, if you are not able to complete all of
+the requirements, you might be allowed to exit with a master’s
+degree.</li>
+</ul>
+<p>Master of Arts (MA) vs Master of Fine Arts (MFA) Degree Programs</p>
+<p>An MA program focuses on deep study and analysis of a subject,
+perhaps culminating in a thesis (some MA programs involve only
+coursework). On the other hand, an MFA program focuses on the creation
+of a substantive work of art (such as a painting or sculpture, a piece
+of literature, or a musical piece). Many MFA degrees are considered
+terminal degrees, meaning they’re the highest degree that you can earn
+in that particular field of art.</p>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+</div>
+<div id="the-hidden-curriculum" class="section level3">
+<h3><strong>The Hidden Curriculum</strong></h3>
+<p><br />
+</p>
+<p>A lot of incoming and advanced graduate students often feel like they
+are navigating things for the first time in their program while their
+peers have it all figured out. It can seem like everyone knows something
+you don’t or has access to inside information. Jessica Calarco defines
+the hidden curriculum as “the knowledge and skills that matter for
+student success but aren’t explicitly taught.” Imagine a path starting
+when you arrive on campus to begin your graduate career. This path
+twists and winds over various landscapes that lead to your degree.
+Everyone’s path will have a slightly different starting point and the
+endpoints will cluster together depending on your earned degree.
+Throughout the landscape, there are treasure chests scattered about with
+different tools inside. Many chests have tools that are field-specific,
+meaning that it’s something only people who are scholars in that
+particular field would need. Then there are a few chests with tools that
+are beneficial to most if not all graduate students at an institution.
+Part of your graduate journey is navigating the landscape to find these
+chests and use the tools inside to make it to the end (your degree).</p>
+<ul>
+<li><p><a href="https://grad.ucdavis.edu/program-resources">UC Davis
+Graduate Studies Resources</a></p></li>
+<li><p><a
+href="https://press.princeton.edu/books/paperback/9780691201092/a-field-guide-to-grad-school">Jessica
+Calarco’s A Field Guide to Grad School</a></p></li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="funding" class="section level3">
+<h3><strong>Funding</strong></h3>
+<p><br />
+</p>
+<ul>
+<li><a
+href="https://grad.ucdavis.edu/funding-your-graduate-education">UC Davis
+Graduate Funding Resources Guide</a></li>
+</ul>
+<p>Dissertation Funding Sources</p>
+<ul>
+<li><a href="https://www.nsf.gov/funding/graduate-students">National
+Science Foundation</a></li>
+<li><a
+href="https://www.russellsage.org/grants/dissertation-research">Russell
+Sage Foundation</a></li>
+<li><a
+href="https://www.spencer.org/grant_types/dissertation-fellowship">Spencer
+Foundation</a></li>
+<li><a
+href="https://www.nationalacademies.org/our-work/ford-foundation-fellowships">Ford
+Foundation</a></li>
+<li><a href="https://www.horowitz-foundation.org/">Horowowitz
+Foundation</a></li>
+<li><a
+href="https://equitablegrowth.org/engage/funding-opportunities/">Washington
+Center for Equitable Growth</a></li>
+<li><a
+href="https://grad.ucdavis.edu/annual-internal-fellowship-competition-continuing-graduate-students">UC
+Davis internal grants</a></li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="conferences" class="section level3">
+<h3><strong>Conferences</strong></h3>
+<p><br />
+</p>
+<ul>
+<li><p><a href="https://www.populationassociation.org/home">Population
+Association of America</a></p></li>
+<li><p><a href="https://www.aag.org/">Association of American
+Geographers</a></p></li>
+<li><p><a href="https://www.asanet.org/">American Sociological
+Association</a></p></li>
+<li><p><a
+href="https://iussp.org/en/international-population-conference">International
+Union for the Scientific Study of Population</a></p></li>
+<li><p><a href="https://urbanaffairsassociation.org/conference/">Urban
+Affairs Association</a></p></li>
+<li><p><a href="https://urc.ucdavis.edu/conference">UC Davis
+Undergraduate Research Conference</a></p></li>
+<li><p><a href="https://grad.ucdavis.edu/travel-awards">UC Davis travel
+awards</a></p></li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="applying-to-the-job-market" class="section level3">
+<h3><strong>Applying to the Job Market</strong></h3>
+<p><br />
+</p>
+<ul>
+<li><a
+href="https://nicolesheriko.com/wp-content/uploads/2023/08/us-academic-job-market-brief-guide-web-version.pdf">Applying
+on the US Academic Job Market: A Brief Guide</a></li>
+</ul>
+<p>Academic Job Listings</p>
+<ul>
+<li><a
+href="https://populationassociation.careerwebsite.com/">Population
+Association of America</a></li>
+<li><a href="https://jobs.aag.org/jobs/?sort=start">Association of
+American Geographers</a></li>
+<li><a href="https://jobs.aag.org/jobs/?sort=start">Association for
+Public Policy Analysis &amp; Management</a></li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+</div>
+<div id="uc-davis-resources" class="section level2">
+<h2><strong>UC Davis Resources</strong></h2>
+<p><br />
+</p>
+<div style="margin-bottom:25px;">
+
+</div>
+<div id="health-wellness" class="section level3">
+<h3><strong>Health &amp; Wellness</strong></h3>
+<p><br />
+</p>
+<ul>
+<li>The UC Davis student <a
+href="https://ebeler.faculty.ucdavis.edu/resources/faq-student-resources/">FAQ
+page</a> is designed to provide information for students on general
+academic resources, health and wellness, careers/internships, and
+community resources. The page has updated links to information on campus
+resources.</li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="data" class="section level3">
+<h3><strong>Data</strong></h3>
+<p><br />
+</p>
+<ul>
+<li><a href="https://datalab.ucdavis.edu/">Data Lab</a></li>
+<li><a href="https://lists.ucdavis.edu/sympa/info/geospatial">Geospatial
+listserve</a></li>
+<li><a href="https://d-rug.github.io/">Davis R Users Group</a></li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="classes" class="section level3">
+<h3><strong>Classes</strong></h3>
+<p><br />
+</p>
+<ul>
+<li><a href="https://datalab.ucdavis.edu/courses/">Data Science</a></li>
+</ul>
+<p>Geospatial/GIS/Spatial</p>
+<ul>
+<li><p>CRD 150 - Quantitative Methods in Community Research</p></li>
+<li><p>CRD 230 - Spatial Methods in Community Research</p></li>
+<li><p>GEO 200CN - Quantitative Geography</p></li>
+<li><p>LDA 150 - Introduction to GIS</p></li>
+<li><p>LDA 152 - Ecological Planning and Design</p></li>
+</ul>
+<div style="margin-bottom:25px;">
+
+</div>
+</div>
+<div id="other" class="section level3">
+<h3><strong>Other</strong></h3>
+<p><br />
+</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+
+</body>
+</html>
